@@ -1,0 +1,72 @@
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.mc_border_bottom {
+  border-bottom: 1px solid black;
+}
+
+.mc_bc_grey {
+  background-color: rgb(176, 189, 202);
+}
+
+.mc_navbar {
+  border-radius: 0;
+  border: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: rgb(176, 189, 202);
+}
+
+.navbar-brand.mc_navbar_brand span {
+  font-size: 1.5em;
+}
+
+.navbar-default .navbar-brand.mc_navbar_brand {
+  color: black;
+}
+
+.navbar-default .navbar-brand.mc_navbar_brand:hover {
+  color: coral;
+}
+
+.navbar-default .navbar-toggle.collapsed.mc_navbar_collapsed {
+  border-color: black;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar.mc_icon {
+  background-color: coral;
+}
+
+.navbar-default .navbar-toggle .icon-bar.mc_icon {
+  background-color: black;
+}
+
+.navbar-default .navbar-nav>li:hover {
+  background-color: rgb(225, 229, 233);
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: black;
+  font-size: larger;
+}
+
+.navbar-default .navbar-nav>li:hover>a {
+  color: coral;
+}
+
+.mc_box a {
+  color: coral;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default.mc_navbar {
+  border-color: black;
+}
+
+.navbar-nav {
+  margin: 0px -15px;
+  background-color: white;
+}
