@@ -1,72 +1,57 @@
-body {
-  background-color: white;
-  font-family: "Roboto", sans-serif;
+body{
+	background-color: #279;
 }
-
-.mc_border_bottom {
-  border-bottom: 1px solid black;
+.mc_bg_c {
+	background-color: white;
+	margin: 10px auto;
 }
-
-.mc_bc_grey {
-  background-color: rgb(176, 189, 202);
+h1 {
+	color: crimson;
 }
-
-.mc_navbar {
-  border-radius: 0;
-  border: 0;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  background-color: rgb(176, 189, 202);
+.question{
+	font-weight: 600;
+	font-size: 1.3em;
+	background-color: lightgrey;
+	margin-bottom: 5px;
 }
-
-.navbar-brand.mc_navbar_brand span {
-  font-size: 1.5em;
+.answers {
+  margin-bottom: 20px;
+	font-size: 1.1em;
 }
-
-.navbar-default .navbar-brand.mc_navbar_brand {
-  color: black;
+.answers label{
+  display: block;
+	cursor: pointer;
 }
-
-.navbar-default .navbar-brand.mc_navbar_brand:hover {
+.answers label:hover{
   color: coral;
+	background-color: rgba(240, 228, 228, 0.404);
 }
-
-.navbar-default .navbar-toggle.collapsed.mc_navbar_collapsed {
-  border-color: black;
-  background-color: transparent;
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #38a;
+	color: #fff;
+	border: 0px;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+	margin: 20px auto
 }
-
-.navbar-default .navbar-toggle:focus .icon-bar.mc_icon {
-  background-color: coral;
+#submit:hover{
+	background-color: rgb(124, 167, 184);
 }
-
-.navbar-default .navbar-toggle .icon-bar.mc_icon {
-  background-color: black;
+#dati {
+	color: crimson;
+	text-transform: uppercase;
+	font-weight: bold;
 }
-
-.navbar-default .navbar-nav>li:hover {
-  background-color: rgb(225, 229, 233);
+#link {
+	font-size: 1.5em;
+	background-color: lightgrey;
 }
-
-.navbar-default .navbar-nav>li>a {
-  color: black;
-  font-size: larger;
+#link a{
+	color: black;
 }
-
-.navbar-default .navbar-nav>li:hover>a {
-  color: coral;
-}
-
-.mc_box a {
-  color: coral;
-}
-
-.navbar-default .navbar-collapse,
-.navbar-default.mc_navbar {
-  border-color: black;
-}
-
-.navbar-nav {
-  margin: 0px -15px;
-  background-color: white;
+#link a:hover{
+	color: coral;
 }
