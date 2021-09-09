@@ -1,0 +1,322 @@
+/* ************************************************* */
+/* ********     MY   GENEAL  CLASSES      ********** */
+/* ************************************************* */
+.debug {
+  background-color: rgba(238, 26, 11, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.my_btn {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #3ad35d;
+  border-color: #3ad35d;
+  margin-top: 50px;
+}
+
+.my_btn:hover {
+  color: #000000;
+  background-color: #3ad35d;
+  border-color: #3ad35d;
+}
+
+/* ************************************************* */
+/* ********              HEADER           ********** */
+/* ************************************************* */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 10000;
+  transition: all 0.2s ease-in-out;
+  height: 70px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 25px;
+}
+
+#my_navbar {
+  background-color: #000000de;
+  padding: 10px 50px;
+}
+
+#my_navbar a {
+  transition: all 0.8s;
+}
+
+#my_navbar a:hover {
+  color: #3de05c;
+  font-size: 1.1em;
+}
+
+.my_logo {
+  width: 61%;
+}
+
+.my_static_logo {
+  height: 64px;
+}
+
+/* ************************************************* */
+/* ********         SECTION HOME          ********** */
+/* ************************************************* */
+
+#home {
+  height: 100vh;
+  padding-top: 100px;
+  background-color: #000000de;
+  background-image: url(../img/bghome.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(130%);
+}
+
+#home .container .my_welcome {
+  position: relative;
+}
+
+#home .container .my_welcome {
+  position: relative;
+}
+
+#home .container .my_welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home .container .my_welcome h1:first-child {
+  color: #b38927;
+}
+
+#home .container .my_welcome h1:nth-child(2),
+#home .container .my_welcome p {
+  color: white;
+}
+
+#home .container .my_welcome span {
+  color: #3ad35d;
+}
+
+/* ************************************************* */
+/* ********         SECTION SKILLS         ********** */
+/* ************************************************* */
+
+#skills {
+  height: 100vh;
+  background-color: #b91818de;
+  background-image: url(../img/bgskills.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(80%);
+}
+
+#skills .my_carousel {
+  line-height: 100vh;
+  position: relative;
+}
+
+#skills .my_card {
+  width: 200px;
+  margin-left: -100px;
+  filter: opacity(90%);
+  border-radius: 10px;
+}
+
+/* ************************************************* */
+/* ********        SECTION PORTFOLIO      ********** */
+/* ************************************************* */
+
+#portfolio {
+  height: 100vh;
+  padding-top: 100px;
+  background-color: #000000;
+  background-image: url(../img/github.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: brightness(90%);
+  color: white;
+}
+
+#portfolio ul {
+  width: 100%;
+  list-style-type: none; /* nessun elemento come marcatore */
+  padding-left: 0; /* padding nullo */
+  margin: 10px;
+}
+
+#portfolio ul li {
+  list-style: none;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #2ca548;
+  transition: all 0.8s;
+}
+
+#portfolio ul li:hover {
+  cursor: pointer;
+  filter: brightness(180%);
+}
+
+#portfolio .my_ul li:hover a {
+  color: #000000;
+}
+
+#portfolio .my_ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+/* ************************************************* */
+/* ********           SECTION ABOUT       ********** */
+/* ************************************************* */
+
+#about {
+  min-height: 100vh;
+  padding-top: 100px;
+  background-color: #1899b9de;
+  background-image: url(../img/bgabout.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(90%);
+}
+
+#about .my_about {
+  transition: all 0.8s ease;
+}
+
+#about .my_about:hover {
+  filter: saturate(4);
+}
+
+/* ************************************************* */
+/* ********         SECTION CONTACT       ********** */
+/* ************************************************* */
+
+#contact {
+  height: 100vh;
+  background-color: #000000f5;
+  /* background-image: url(../img/2365424.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(120%);
+}
+
+#contact .my_bgcontact {
+  height: 40vh;
+  background-image: url(../img/bgcontact1.jpg);
+  background-position: center;
+  filter: brightness(80%);
+  margin-bottom: 40px;
+}
+
+#contact .contact_top,
+#contact .contact_bottom {
+  height: 20vh;
+}
+
+#contact .contact_top h1 {
+  color: #b38927;
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+#contact .contact_top h2 {
+  color: #ffffff;
+}
+
+#contact .contact_bottom ul {
+  margin-top: 30px;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#contact .contact_bottom ul li {
+  margin-bottom: 10px;
+}
+
+#contact .contact_bottom ul li a {
+  text-decoration: none;
+}
+
+#contact a {
+  color: #3de05c;
+}
+
+#contact .contact_top a:hover {
+  filter: brightness(70%);
+}
+
+#contact .contact_bottom a:hover {
+  color: #ffffff;
+}
+
+/* **************** - S T A R T - ****************** */
+/* *******     M E D I A    Q U E R I E S   ******** */
+/* ************************************************* */
+
+/* // x-Small devices  */
+@media all and (max-width: 575px) {
+  .my_logo {
+    display: none;
+  }
+  .my_static_logo {
+    display: block;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up)  */
+@media all and (min-width: 576px) {
+  .my_logo {
+    display: none;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media all and (min-width: 768px) {
+  .my_logo {
+    display: block;
+  }
+  .my_static_logo {
+    display: none;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media all and (min-width: 992px) {
+}
+
+/* // nascondo .call_to_action quando la finestra è meno alta di 180px */
+@media all and (max-height: 180px) {
+}
+
+/* /////////////////// - E  N  D - ///////////////// */
+/* /////////   M E D I A    Q U E R I E S    /////// */
+/* ///////////////////////////////////////////////// */

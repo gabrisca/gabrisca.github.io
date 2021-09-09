@@ -1,109 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>David Chu's China Bistro</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriele Scarparo Portfolio</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- f_awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- style.css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
 <body>
-  <header> 
-
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img" alt="Logo image"></div>
-          </a>
-
-          <div class="navbar-brand">
-            <a href="index.html"><h1>David Chu's China Bistro</h1></a>
-            <p>
-              <img src="images/star-k-logo.png" alt="Kosher certification">
-              <span>Kosher Certified</span>
-            </p>
-          </div>
-
-          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+  <!-- header -->
+  <header>
+    <nav id="my_navbar" class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <!-- <div class="lds-ripple"><div></div><div></div></div> -->
+          <img class="my_logo" src="assets/img/logo.gif" alt="logo animato">
+          <img class="my_static_logo" src="assets/img/g.png" alt="logo statico">
+          <!-- <a id="my_brand" class="navbar-brand" href="#">Gabriele Scarparo</a> -->
         </div>
-        
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="navHomeButton" class="visible-xs active">
-              <a href="index.html">
-                <span class="glyphicon glyphicon-home"></span> Home</a>
-            </li>
-            <li id="navMenuButton">
-              <a href="#" onclick="$dc.loadMenuCategories();">
-                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
-            </li>
-            <li id="phone" class="hidden-xs">
-              <a href="tel:410-602-5008">
-                <span>410-602-5008</span></a><div>* We Deliver</div>
-            </li>
-          </ul><!-- #nav-list -->
-        </div><!-- .collapse .navbar-collapse -->
-      </div><!-- .container -->
-    </nav><!-- #header-nav -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#about">About Me</a>
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <div id="call-btn" class="visible-xs">
-    <a class="btn" href="tel:410-602-5008">
-    <span class="glyphicon glyphicon-earphone"></span>
-    410-602-5008
-    </a>
-  </div>
-  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
-
-  <div id="main-content" class="container"></div>
-
-  <footer class="panel-footer">
-    <div class="container">
-      <div class="row">
-        <section id="hours" class="col-sm-4">
-          <span>Hours:</span><br>
-          Sun-Thurs: 11:15am - 10:00pm<br>
-          Fri: 11:15am - 2:30pm<br>
-          Saturday Closed
-          <hr class="visible-xs">
-        </section>
-        <section id="address" class="col-sm-4">
-          <span>Address:</span><br>
-          7105 Reisterstown Road<br>
-          Baltimore, MD 21215
-          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
-          <hr class="visible-xs">
-        </section>
-        <section id="testimonials" class="col-sm-4">
-          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
-          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
-        </section>
+  <!-- section home -->
+  <section id="home">
+    <div class="container text-center">
+      <div class="my_welcome">
+        <div class="my_message">
+          <h1 class="animate__animated animate__fadeInUp">Welcome to </h1>
+          <h1><span>G</span>abriele <span>S</span>carparo <span>W</span>ebsite</h1>
+          <p class="animate__animated animate__fadeOutDown animate__delay-5s">The site aims to present the skills I've
+            learned</p>
+          <p class="animate__animated animate__fadeOutDown animate__delay-5s">My programming adventure began in January
+            2021, and this is just the beginning!</p>
+          <a class="btn my_btn text-center" href="#skills">
+            Let's start
+          </a>
+        </div>
       </div>
-      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
     </div>
-  </footer>
+  </section>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/ajax-utils.js"></script>
-  <script src="js/script.js"></script>
+  <!-- section skills -->
+  <section id="skills">
+    <!-- carousel bootstrap -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner d-flex justify-content-center align-items-center">
+        <div class="carousel-item active my_carousel">
+          <img src="assets/img/html.png" class="my_card" alt="logo html">
+        </div>
+        <div class="carousel-item my_carousel">
+          <img src="assets/img/css.png" class="my_card" alt="logo css">
+        </div>
+        <div class="carousel-item my_carousel">
+          <img src="assets/img/js.png" class="my_card" alt="logo js">
+        </div>
+        <div class="carousel-item my_carousel">
+          <img src="assets/img/jquery.png" class="my_card" alt="logo jquery">
+        </div>
+        <div class="carousel-item my_carousel">
+          <img src="assets/img/vuejs.png" class="my_card" alt="logo vue">
+        </div>
+        <div class="carousel-item my_carousel">
+          <img src="assets/img/php.png" class="my_card" alt="logo php">
+        </div>
+        <div class="carousel-item my_carousel">
+          <img src="assets/img/mysql.png" class="my_card" alt="logo mysql">
+        </div>
+        <div class="carousel-item my_carousel">
+          <img src="assets/img/laravel.png" class="my_card" alt="logo laravel">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon my_prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon my_next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- section portfolio -->
+  <section id="portfolio">
+    <div class="container d-flex justify-content-between">
+      <div class="my_ul d-flex justify-content-start">
+        <ul>
+          <li>
+            <a target=”_blank” href="https://github.com/gabrisca/Ispecialists">Ispecialists</a>
+          </li>
+          <li>
+            <a target=”_blank” href="https://github.com/gabrisca/laravel-la-molisana">La Molisana</a>
+          </li>
+          <li>
+            <a target=”_blank” href="https://github.com/gabrisca/laravel-comics">Comics Store</a>
+          </li>
+          <li>
+            <a target=”_blank” href="https://github.com/gabrisca/laravel-houses">Holidays Houses</a>
+          </li>
+          <li>
+            <a target=”_blank” href="https://github.com/gabrisca/php-ajax-dischi">Music Database</a>
+          </li>
+        </ul>
+      </div>
+      <div class="my_ul d-flex justify-content-end">
+        <ul>
+          <li>
+            <a target=”_blank” href="https://github.com/gabrisca/vue-boolflix">Boolflix</a>
+          </li>
+          <li>
+            <a target=”_blank” href="https://github.com/gabrisca/vue-dischi">Vue Dischi</a>
+          </li>
+          <li>
+            <a target=”_blank” href="https://github.com/gabrisca/vue-dc-comics">Vue DC Comics</a>
+          </li>
+          <li>
+            <a target=”_blank” href="https://github.com/gabrisca/html-css-spotifyweb">Spotify</a>
+          </li>
+          <li>
+            <a target=”_blank” href="https://github.com/gabrisca/html-css-digitalocean">Digital Ocean</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- section about -->
+  <section id="about">
+    <div class="container">
+      <div class="row d-flex justify-content-evenly">
+        <div class="my_about card col-xs-12 col-sm-6 col-lg-2 m-1 p-2">
+          <img src="assets/img/computer.png" class="card-img-top" alt="computer image">
+          <div class="card-body">
+            <p class="card-text">Passionate about history and computing, I have always been interested in the world of
+              books</p>
+          </div>
+        </div>
+        <div class="my_about card col-xs-12 col-sm-6 col-lg-2 m-1 p-2">
+          <img src="assets/img/books.png" class="card-img-top" alt="books image">
+          <div class="card-body">
+            <p class="card-text">I studied History and Anthropology at university and I worked for many years
+              as a bookseller</p>
+          </div>
+        </div>
+        <div class="my_about card col-xs-12 col-sm-6 col-lg-2 m-1 p-2">
+          <img src="assets/img/research.png" class="card-img-top" alt="research image">
+          <div class="card-body">
+            <p class="card-text">I have also collaborated with several websites and cultural, historical and sports
+              research organisations</p>
+          </div>
+        </div>
+        <div class="my_about card col-xs-12 col-sm-6 col-lg-2 m-1 p-2">
+          <img src="assets/img/blog.png" class="card-img-top" alt="blog image">
+          <div class="card-body">
+            <p class="card-text">I regularly publish short history articles and more on my Wordpress blog</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section contact -->
+  <section id="contact">
+    <div class="my_bgcontact"></div>
+    <div class="container">
+      <div class="contact_top">
+        <h1 class="text-center text-uppercase mb-5 animate__animated animate__bounce animate__infinite 	infinite">
+          Contact Me</h1>
+        <h2 class="text-center mb-5">Do you want to know more? Send me a <a class="text-decoration-none"
+            href="mailto:gabrielescarparo1985@gmail.com">message</a></h2>
+      </div>
+      <div class="contact_bottom d-flex justify-content-center">
+        <ul>
+          <li>
+            <a target=”_blank” href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin fa-2x"></i></a>
+          </li>
+          <li>
+            <a target=”_blank” href="https://github.com/gabrisca?tab=repositories"><i
+                class="fab fa-github fa-2x"></i></a>
+          </li>
+          <li>
+            <a target=”_blank” href="https://twitter.com/gabrisca_85"><i class="fab fa-twitter fa-2x"></i></a>
+          </li>
+          <li>
+            <a target=”_blank” href="https://gabrielescarparo.wordpress.com/"><i class="fab fa-wordpress fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- script.js -->
+  <script src="assets/js/script.js"></script>
+
 </body>
+
 </html>
