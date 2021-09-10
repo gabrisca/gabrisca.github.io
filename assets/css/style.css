@@ -53,16 +53,22 @@ header {
 
 #my_navbar {
   background-color: #000000de;
-  padding: 10px 50px;
+  padding: 10px 20px;
 }
 
 #my_navbar a {
-  transition: all 0.8s;
+  transition: all 0.7s ease;
+  margin-left: 15px;
 }
 
 #my_navbar a:hover {
   color: #3de05c;
   font-size: 1.1em;
+  border-bottom: 2px solid #b38927;
+}
+
+.my_toggler:hover {
+  border-color: #3de05c;
 }
 
 .my_logo {
@@ -105,6 +111,7 @@ header {
 
 #home .container .my_welcome h1:first-child {
   color: #b38927;
+  margin-top: 150px;
 }
 
 #home .container .my_welcome h1:nth-child(2),
@@ -147,15 +154,47 @@ header {
 /* ************************************************* */
 
 #portfolio {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #000000;
   background-image: url(../img/github.png);
-  background-position: center;
+  background-position-x: 50%;
+  background-position-y: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  filter: brightness(90%);
+  filter: brightness(80%);
   color: white;
+}
+
+#portfolio .my_screenshot {
+  height: 350px;
+  margin: 10px 2px;
+  padding: 5px;
+  background-color: #ffffff;
+  transition: all 0.8s ease-in;
+}
+
+#portfolio .my_screenshot:hover {
+  filter: brightness(1.1);
+  transform: scale(0.9);
+  background-color: #3ad35d;
+}
+
+#portfolio .my_screenshot img {
+  width: 100%;
+  height: 70%;
+}
+
+#portfolio .my_screenshot .my_dev {
+  width: 100%;
+  height: 30%;
+  background-color: #000000;
+  line-height: 100px;
+}
+
+#portfolio .my_screenshot .my_dev i:hover {
+  color: #b38927;
 }
 
 #portfolio ul {
@@ -221,7 +260,14 @@ header {
 
 #contact {
   height: 100vh;
-  background-color: #000000f5;
+  background: rgb(32, 102, 32);
+  background: rgb(51, 97, 51);
+  background: linear-gradient(
+    338deg,
+    rgba(51, 97, 51, 1) 0%,
+    rgba(0, 0, 0, 0.8486928218553046) 35%,
+    rgba(1, 1, 1, 1) 96%
+  );
   /* background-image: url(../img/2365424.jpg); */
   background-position: center;
   background-repeat: no-repeat;
@@ -230,7 +276,7 @@ header {
 }
 
 #contact .my_bgcontact {
-  height: 40vh;
+  height: 50vh;
   background-image: url(../img/bgcontact1.jpg);
   background-position: center;
   filter: brightness(80%);
@@ -239,7 +285,7 @@ header {
 
 #contact .contact_top,
 #contact .contact_bottom {
-  height: 20vh;
+  height: 15vh;
 }
 
 #contact .contact_top h1 {
@@ -259,7 +305,9 @@ header {
 }
 
 #contact .contact_bottom ul li {
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-right: 10px;
+  display: inline-block;
 }
 
 #contact .contact_bottom ul li a {
@@ -289,6 +337,9 @@ header {
   }
   .my_static_logo {
     display: block;
+  }
+  #portfolio {
+    padding: 100px 20px;
   }
 }
 

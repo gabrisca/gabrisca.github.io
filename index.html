@@ -41,8 +41,9 @@
           <img class="my_static_logo" src="assets/img/g.png" alt="logo statico">
           <!-- <a id="my_brand" class="navbar-brand" href="#">Gabriele Scarparo</a> -->
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler my_toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
@@ -65,9 +66,9 @@
         <div class="my_message">
           <h1 class="animate__animated animate__fadeInUp">Welcome to </h1>
           <h1><span>G</span>abriele <span>S</span>carparo <span>W</span>ebsite</h1>
-          <p class="animate__animated animate__fadeOutDown animate__delay-5s">The site aims to present the skills I've
+          <p class="animate__animated animate__bounceIn animate__delay-2s">The site aims to present the skills I've
             learned</p>
-          <p class="animate__animated animate__fadeOutDown animate__delay-5s">My programming adventure began in January
+          <p class="animate__animated animate__backInLeft animate__delay-5s">My programming adventure began in January
             2021, and this is just the beginning!</p>
           <a class="btn my_btn text-center" href="#skills">
             Let's start
@@ -120,44 +121,60 @@
 
   <!-- section portfolio -->
   <section id="portfolio">
-    <div class="container d-flex justify-content-between">
-      <div class="my_ul d-flex justify-content-start">
-        <ul>
-          <li>
-            <a target=”_blank” href="https://github.com/gabrisca/Ispecialists">Ispecialists</a>
-          </li>
-          <li>
-            <a target=”_blank” href="https://github.com/gabrisca/laravel-la-molisana">La Molisana</a>
-          </li>
-          <li>
-            <a target=”_blank” href="https://github.com/gabrisca/laravel-comics">Comics Store</a>
-          </li>
-          <li>
-            <a target=”_blank” href="https://github.com/gabrisca/laravel-houses">Holidays Houses</a>
-          </li>
-          <li>
-            <a target=”_blank” href="https://github.com/gabrisca/php-ajax-dischi">Music Database</a>
-          </li>
-        </ul>
-      </div>
-      <div class="my_ul d-flex justify-content-end">
-        <ul>
-          <li>
-            <a target=”_blank” href="https://github.com/gabrisca/vue-boolflix">Boolflix</a>
-          </li>
-          <li>
-            <a target=”_blank” href="https://github.com/gabrisca/vue-dischi">Vue Dischi</a>
-          </li>
-          <li>
-            <a target=”_blank” href="https://github.com/gabrisca/vue-dc-comics">Vue DC Comics</a>
-          </li>
-          <li>
-            <a target=”_blank” href="https://github.com/gabrisca/html-css-spotifyweb">Spotify</a>
-          </li>
-          <li>
-            <a target=”_blank” href="https://github.com/gabrisca/html-css-digitalocean">Digital Ocean</a>
-          </li>
-        </ul>
+    <div class="container">
+      <div class="row d-flex justify-content-between align-content-center">
+        <div class="my_screenshot col-xs-12 col-md-3">
+          <a target=”_blank” href="https://github.com/gabrisca/Ispecialists"><img src="assets/img/ispecialists.jpg"
+              alt="screenshot ispecialists"></a>
+          <div class="my_dev text-center">
+            <i class="fab fa-vuejs fa-2x m-1"></i>
+            <i class="fab fa-sass fa-2x m-1"></i>
+            <i class="fab fa-php fa-2x m-1"></i>
+          </div>
+        </div>
+        <div class="my_screenshot col-xs-12 col-md-3">
+          <a target=”_blank” href="https://github.com/gabrisca/vue-boolflix"><img src="assets/img/boolflix.jpg"
+              alt="screenshot boolflix"></a>
+          <div class="my_dev text-center">
+            <i class="fab fa-vuejs fa-2x m-1"></i>
+            <i class="fab fa-sass fa-2x m-1"></i>
+            <i class="fab fa-bootstrap fa-2x m-1"></i>
+          </div>
+        </div>
+        <div class="my_screenshot col-xs-12 col-md-3">
+          <a target=”_blank” href="https://github.com/gabrisca/laravel-comics"><img src="assets/img/dccomics.jpg"
+              alt="screenshot dc-comics"></a>
+          <div class="my_dev text-center">
+            <i class="fab fa-html5 fa-2x m-1"></i>
+            <i class="fab fa-css3-alt fa-2x m-1"></i>
+            <i class="fab fa-php fa-2x m-1"></i>
+          </div>
+        </div>
+        <div class="my_screenshot col-xs-12 col-md-3">
+          <a target=”_blank” href="https://github.com/gabrisca/html-css-digitalocean"><img
+              src="assets/img/digitalocean.jpg" alt="screenshot digitalocean"></a>
+          <div class="my_dev text-center">
+            <i class="fab fa-html5 fa-2x m-1"></i>
+            <i class="fab fa-css3-alt fa-2x m-1"></i>
+            <i class="fab fa-bootstrap fa-2x m-1"></i>
+          </div>
+        </div>
+        <div class="my_screenshot col-xs-12 col-md-3">
+          <a target=”_blank” href="https://github.com/gabrisca/js-html-css-boolzap"><img src="assets/img/boolzap.jpg"
+              alt="screenshot boolzap"></a>
+          <div class="my_dev text-center">
+            <i class="fab fa-html5 fa-2x m-1"></i>
+            <i class="fab fa-css3-alt fa-2x m-1"></i>
+            <i class="fab fa-js-square fa-2x m-1"></i>
+          </div>
+        </div>
+        <div class="my_screenshot col-xs-12 col-md-3">
+          <a target=”_blank” href="https://gabrielescarparo.wordpress.com/"><img src="assets/img/histoire.jpg"
+              alt="screenshot histoire"></a>
+          <div class="my_dev text-center">
+            <i class="fab fa-wordpress fa-2x m-1"></i>
+          </div>
+        </div>
       </div>
     </div>
   </section>
