@@ -84,7 +84,7 @@ header {
 /* ************************************************* */
 
 #home {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 100px;
   background-color: #000000de;
   background-image: url(../img/bghome.jpg);
@@ -128,7 +128,7 @@ header {
 /* ************************************************* */
 
 #skills {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #b91818de;
   background-image: url(../img/bgskills.jpg);
   background-position: center;
@@ -259,7 +259,7 @@ header {
 /* ************************************************* */
 
 #contact {
-  height: 100vh;
+  min-height: 100vh;
   background: rgb(32, 102, 32);
   background: rgb(51, 97, 51);
   background: linear-gradient(
