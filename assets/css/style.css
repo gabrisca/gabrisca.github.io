@@ -33,6 +33,18 @@ body {
   border-color: #3ad35d;
 }
 
+.my_ml {
+  margin-left: 40px;
+}
+
+.my_cpurple {
+  color: #D414CF;
+}
+
+.my_cgreen {
+  color: #44F206;
+}
+
 /* ************************************************* */
 /* ********              HEADER           ********** */
 /* ************************************************* */
@@ -238,6 +250,7 @@ header {
 #about {
   min-height: 100vh;
   padding-top: 100px;
+  padding-bottom: 50px;
   background-color: #1899b9de;
   background-image: url(../img/bgabout.jpg);
   background-position: center;
@@ -252,6 +265,16 @@ header {
 
 #about .my_about:hover {
   filter: saturate(4);
+}
+
+#about .my_chevron{
+  margin-top: 100px;
+  color: #b38927;
+}
+
+#about .my_chevron:hover{
+  color: #3ad35d;
+  cursor: pointer;
 }
 
 /* ************************************************* */
