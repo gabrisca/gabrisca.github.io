@@ -179,12 +179,12 @@ header {
   min-height: 100vh;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #0000008a;
+  background-color: #000000;
   background-image: url(../img/github.png);
   background-position-x: 50%;
-  background-position-y: bottom;
+  background-position-y: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100px;
   filter: brightness(80%);
   color: white;
 }
