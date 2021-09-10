@@ -98,7 +98,7 @@ header {
 #home {
   min-height: 100vh;
   padding-top: 100px;
-  background-color: #000000de;
+  background-color: #79646475;
   background-image: url(../img/bghome.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -141,7 +141,7 @@ header {
 
 #skills {
   min-height: 100vh;
-  background-color: #b91818de;
+  background-color: #3a1c1c6c;
   background-image: url(../img/bgskills.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -169,7 +169,7 @@ header {
   min-height: 100vh;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #000000;
+  background-color: #0000008a;
   background-image: url(../img/github.png);
   background-position-x: 50%;
   background-position-y: bottom;
@@ -224,7 +224,7 @@ header {
   padding: 10px;
   text-align: center;
   line-height: 30px;
-  background-color: #2ca548;
+  background-color: #1d642e93;
   transition: all 0.8s;
 }
 
