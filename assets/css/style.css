@@ -285,7 +285,7 @@ header {
 
 #contact .contact_top,
 #contact .contact_bottom {
-  height: 15vh;
+  min-height: 15vh;
 }
 
 #contact .contact_top h1 {
