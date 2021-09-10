@@ -38,11 +38,21 @@ body {
 }
 
 .my_cpurple {
-  color: #D414CF;
+  color: #d414cf;
 }
 
 .my_cgreen {
-  color: #44F206;
+  color: #44f206;
+}
+
+.my_chevron {
+  margin-top: 100px;
+  color: #b38927;
+}
+
+.my_chevron:hover {
+  color: #3ad35d;
+  cursor: pointer;
 }
 
 /* ************************************************* */
@@ -265,16 +275,6 @@ header {
 
 #about .my_about:hover {
   filter: saturate(4);
-}
-
-#about .my_chevron{
-  margin-top: 100px;
-  color: #b38927;
-}
-
-#about .my_chevron:hover{
-  color: #3ad35d;
-  cursor: pointer;
 }
 
 /* ************************************************* */
