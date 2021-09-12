@@ -321,7 +321,7 @@ header {
 
 #skills {
   min-height: 100vh;
-  background-color: #3a1c1c6c;
+  background-color: #000000;
   background-image: url(../img/bgskills.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -404,7 +404,7 @@ header {
   padding: 10px;
   text-align: center;
   line-height: 30px;
-  background-color: #1d642e93;
+  background-color: #000000;
   transition: all 0.8s;
 }
 
@@ -431,7 +431,7 @@ header {
   min-height: 100vh;
   padding-top: 100px;
   padding-bottom: 50px;
-  background-color: #1899b9de;
+  background-color: #000000;
   background-image: url(../img/bgabout.jpg);
   background-position: center;
   background-repeat: no-repeat;
